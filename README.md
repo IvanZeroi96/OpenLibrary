@@ -2,6 +2,8 @@
 
 Examen de RobinFood
 
+Proyecto creado en flutter version 2.8.0 
+
 ![Pantalla principal](/assets/images/imagesread/Home.png "Pantalla principal")
 
 ## Getting Started
