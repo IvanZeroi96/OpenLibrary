@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Robin Food Library',
+        title: 'Open Library',
         debugShowCheckedModeBanner: false,
         navigatorKey: Get.key,
         navigatorObservers: [GetObserver()],
