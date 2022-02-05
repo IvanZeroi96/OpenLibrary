@@ -13,17 +13,28 @@ class SplashPage extends StatelessWidget{
     return GetBuilder<SplashController>(
       init: SplashController(),
       builder: (get) {
-        return Scaffold(
-          backgroundColor: RFLColors.primaryColors,
-          body: Center(
-            child: SvgPicture.asset(
-              'assets/images/openlibrary_logo_tighter.svg',
-              height: 60.0,
-              width: 55.0,
-              allowDrawingOutsideViewBox: true,
-            ),
+        return Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                stops: [
+                  0.1,
+                  0.8
+                ],
+                colors: [RFLColors.primaryColors, Colors.grey],
+                tileMode: TileMode.clamp,
+              )
           ),
-        );
+            child: Center(
+              child: SvgPicture.asset(
+                'assets/images/openlibrary_logo_tighter.svg',
+                height: 60.0,
+                width: 55.0,
+                allowDrawingOutsideViewBox: true,
+              ),
+            ),
+          );
       },
     );
   }
